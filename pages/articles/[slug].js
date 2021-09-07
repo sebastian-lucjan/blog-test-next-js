@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Layout from 'Components/Layout';
+import Layout from 'components/Layout';
 import { getArticle, getListOfArticles } from 'services/articles';
 
 export const getStaticPaths = async () => {
@@ -23,7 +23,8 @@ export default function Article({ article }) {
     <Layout>
       <Head>
         <title>{article.title}</title>
-        {/*<link href="https://unpkg.com/prismjs@0.0.1/themes/prism-okaidia.css" rel="stylesheet" />*/}
+        {/*<link href="https://unpkg.com/prismjs@0.0.1/themes/prism-tomorrow.css" rel="stylesheet" />*/}
+        {/*<link href="styles/prism-xonokai.css" rel="stylesheet" />*/}
       </Head>
       <div>
         <h1 className="text-center text-3xl mb-10">{article.title}</h1>
@@ -35,3 +36,8 @@ export default function Article({ article }) {
     </Layout>
   );
 }
+
+// prism-dark.css	1.99 kB	text/css
+// prism-okaidia.css	1.71 kB	text/css
+// prism-tomorrow.css	1.69 kB	text/css
+// prism-twilight.css

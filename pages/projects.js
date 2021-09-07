@@ -1,4 +1,4 @@
-import Layout from '../Components/Layout';
+import Layout from '../components/Layout';
 import Head from 'next/head';
 import { getAllProjects } from '../services/projects';
 
