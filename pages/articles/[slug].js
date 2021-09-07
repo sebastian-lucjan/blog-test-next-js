@@ -36,8 +36,3 @@ export default function Article({ article }) {
     </Layout>
   );
 }
-
-// prism-dark.css	1.99 kB	text/css
-// prism-okaidia.css	1.71 kB	text/css
-// prism-tomorrow.css	1.69 kB	text/css
-// prism-twilight.css
