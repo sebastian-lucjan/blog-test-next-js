@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { getAllProjects } from '../services/projects';
 
 export const getStaticProps = () => {
-  const projects = getAllProjects();
+  const projects = getAllProjects('_projects');
 
   return projects;
 };

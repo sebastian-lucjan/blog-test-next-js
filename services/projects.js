@@ -4,6 +4,6 @@ export const getAllProjects = () => {
   const projects = getList('_projects');
 
   return {
-    props: { projects: projects.sort((a, b) => b.createAt - a.createAt) }
+    props: { projects: projects.sort((a, b) => b.createdAt - a.createdAt) }
   };
 };
