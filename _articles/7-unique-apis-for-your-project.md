@@ -26,3 +26,9 @@ With Shodan you are really only limited by your imagination, just make sure you 
 
 ## Conclusion
 If you think I forget any APIs let me know. Also I'd love to see people brainstorming cool ideas in the comments below.
+
+```javascript
+
+const testCode = "remark prism";
+
+```
