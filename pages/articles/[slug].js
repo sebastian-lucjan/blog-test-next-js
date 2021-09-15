@@ -23,8 +23,6 @@ export default function Article({ article }) {
     <Layout>
       <Head>
         <title>{article.title}</title>
-        {/*<link href="https://unpkg.com/prismjs@0.0.1/themes/prism-tomorrow.css" rel="stylesheet" />*/}
-        {/*<link href="styles/prism-xonokai.css" rel="stylesheet" />*/}
       </Head>
       <div>
         <h1 className="text-center text-3xl mb-10">{article.title}</h1>

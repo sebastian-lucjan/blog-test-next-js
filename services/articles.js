@@ -1,13 +1,9 @@
-import { getList, getFileBySlug } from 'lib/markdownParser';
+import { getFileBySlug, getList } from 'lib/markdownParser';
 
 export const getListOfArticles = () => {
   const articles = getList('_articles');
-
+  console.log(articles.sort((a, b) => b.createdAt - a.createdAt));
   return articles.sort((a, b) => b.createdAt - a.createdAt);
 };
 
-export const getArticle = async (slug) => {
-  const article = await getFileBySlug('_articles', slug);
-
-  return article;
-};
+export const getArticle = async (slug) => await getFileBySlug('_articles', slug);

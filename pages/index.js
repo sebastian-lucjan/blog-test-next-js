@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { getList } from '../lib/markdownParser';
 
 export const getStaticProps = () => {
-  const articles = getList('_articles');
+  const rawArticles = getList('_articles');
+  const articles = rawArticles.sort((a, b) => b.createdAt - a.createdAt);
 
   return {
     props: { articles }
