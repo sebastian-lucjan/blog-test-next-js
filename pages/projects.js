@@ -1,9 +1,9 @@
 import Layout from 'components/Layout';
 import Head from 'next/head';
-import { getList } from '../lib/markdownParser';
+import { getAllProjects } from '../services/projects';
 
 export const getStaticProps = () => {
-  const projects = getList('_projects');
+  const projects = getAllProjects('_projects');
   return {
     props: { projects }
   };
