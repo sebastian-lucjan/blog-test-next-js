@@ -8,7 +8,7 @@ const navLinks = [
 
 export default function Layout({ children }) {
   return (
-    <div className={'p-10 font-mono'}>
+    <div className={'p-10 font-mono max-w-screen-xl mx-auto'}>
       <nav className={'bg-blue-400 p-5 flex justify-center'}>
         {navLinks.map(({ path, label, id }) => (
           <Link href={path} key={id}>
